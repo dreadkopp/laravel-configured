@@ -1,0 +1,37 @@
+{
+    "name": "dreadkopp/laravel-configured",
+    "description": "access only configured config values",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Dreadkopp\\LaravelConfigured\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Dreadkopp\\LaravelConfigured\\Providers\\ConfiguredServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "arne ziegert"
+        }
+    ],
+    "require": {
+        "laravel/framework": "^11"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.9",
+        "phpunit/phpunit": "^11.5"
+    }
+}
