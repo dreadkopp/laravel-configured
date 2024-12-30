@@ -2,6 +2,7 @@
     "name": "dreadkopp/laravel-configured",
     "description": "access only configured config values",
     "type": "library",
+    "version": "0.1.0",
     "autoload": {
         "psr-4": {
             "Dreadkopp\\LaravelConfigured\\": "src/"
