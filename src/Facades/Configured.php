@@ -3,6 +3,7 @@
 namespace Dreadkopp\LaravelConfigured\Facades;
 
 
+use Closure;
 use Illuminate\Support\Facades\Facade;
 use InvalidArgumentException;
 
@@ -10,11 +11,11 @@ use InvalidArgumentException;
  * @method static bool has(string $key)
  * @method static mixed get(array|string $key, mixed $default = null)
  * @method static array getMany(array $keys)
- * @method static string string(string $key, \Closure|string|null $default = null)
- * @method static int integer(string $key, \Closure|int|null $default = null)
- * @method static float float(string $key, \Closure|float|null $default = null)
- * @method static bool boolean(string $key, \Closure|bool|null $default = null)
- * @method static array array(string $key, \Closure|array|null $default = null)
+ * @method static string string(string $key, (Closure | string | null) $default = null)
+ * @method static int integer(string $key, (Closure | int | null) $default = null)
+ * @method static float float(string $key, (Closure | float | null) $default = null)
+ * @method static bool boolean(string $key, (Closure | bool | null) $default = null)
+ * @method static array array(string $key, (Closure | array | null) $default = null)
  * @method static array all()
  * @method static bool hasMacro(string $name)
  * @method static void flushMacros()
